@@ -25,7 +25,7 @@ def escher2cyelements(escher_json_url):
             data['label'] = v['name']
             data['x'] = float(v['x'])
             data['y'] = float(v['y'])
-            cynode = {'data':data, 'position':{'x':float(v['x']), 'y':float(['y'])}, "selected":"false"}
+            cynode = {'data':data, 'position':{'x':float(v['x']), 'y':float(v['y'])}, "selected":"false"}
             cynodes.append(cynode)
 
     cyelements["nodes"] = cynodes
