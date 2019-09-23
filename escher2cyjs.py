@@ -19,6 +19,7 @@ def escher2cyelements(escher_json_url):
 
     for k, v in escher_nodes.items():
         if v['node_type'] == 'metabolite':
+            data = {}
             data['id'] = k
             data['bigg_id'] = v['bigg_id']
             data['label'] = v['name']
